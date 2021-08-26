@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight.eot");
+    src: url("../fonts/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+
+
+.font-yellow {
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #F6C866;
+}
+
+.font-gray {
+font-family: "RobotoLight", sans-serif;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: rgba(255, 255, 255, 0.6);
+}
+
+.font-white {
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+
+}

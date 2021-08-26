@@ -1,0 +1,75 @@
+@import "fonts.css";
+@import "button.css";
+@import "about.css";
+@import "home-page.css";
+@import "helper.css";
+
+
+a {
+   text-decoration: none;
+}
+
+section {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    /* max-width: 1440px; */
+    max-width: 2560px;
+    /* padding: 0 16px; */
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #FFFFFF;
+}
+body {
+  background-color: #202024;
+}
+
+
+#test {
+  /* height: auto; */
+}
+
+  #footer {
+    /* height: 100vh; */
+  }
+
+
+
+
+
+
+
+
+  .content-text {
+    margin-top: 10px;
+    /* margin-bottom: 65px; */
+  }
+
+  .content {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0;
+  }
+
+
+
+
+  .container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
