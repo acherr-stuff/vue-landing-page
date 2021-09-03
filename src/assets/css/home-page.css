@@ -1,6 +1,6 @@
 /* Зададим стили для всей секции home-page */
 #home-page {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-position-y: -153px;
     background-color: #202024;
+    width: 100%
   }
 
 
@@ -17,21 +18,33 @@
 
   .header-main {
     height: 75px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+      /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+
+
+  .header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .header-text {
-    margin-top: 35px;
+    padding-top: 35px;
   }
 
 
   /* Стили для логотипа */
 
+  .logo-text {
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 29px;
+  }
+
   .logo-bg {
    background-size: cover;
-    background-image: url(/static/img/icon1.16251d3.svg);
+    background-image: url("../../assets/logo-bg.svg");
     background-origin: border-box;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -56,6 +69,7 @@
     height: 390px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px
   }
 
   .logo-img {
@@ -69,24 +83,30 @@
 
 .question-wrap {
     margin-top: 15px;
+    max-width: 500px;
     /* margin-bottom: 40px; */
 }
 
-.question {
-    padding-bottom: 10px;
+.question-text {
+  padding-bottom: 10px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
 }
 
 
 .answer-section {
     display: flex;
     flex-direction: column;
-    margin-left: 19%;
-    margin-right: 19%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 310px
 }
 
   /* нижний блок "онлайн предсказание" */
   .question-footer {
-    margin-top: 35px;
+    margin-top: 105px;
+    /* margin-bottom: 40px; */
 }
     /* height: 60px; */
 
@@ -94,5 +114,5 @@
 
  .text-upp {
     text-transform: uppercase;
-    line-height: 35px;
+    /* line-height: 35px; */
   }

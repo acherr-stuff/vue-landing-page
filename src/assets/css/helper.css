@@ -65,6 +65,10 @@ input {
 }
 
 .mt-35 {
+  margin-top: 30px !important;
+}
+
+.mt-35 {
   margin-top: 35px !important;
 }
 
@@ -80,15 +84,56 @@ input {
   margin-top: 70px !important;
 }
 
+.mt-100 {
+  margin-top: 70px !important;
+}
+
 
 .mb-40 {
   margin-bottom: 40px !important;
 }
 
+.mb-35 {
+  margin-bottom: 35px !important;
+}
 
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.m-x {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.pb-80 {
+  padding-bottom: 80px !important;
+
+}
+
+.pt-35 {
+    padding-top: 35px !important;
+}
 
 
 /* Прозрачность opacity */
 .op-02 {
   opacity: 0.2;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.p-abs {
+  position: absolute;
+}
+
+.p-rel {
+  position: relative;
 }

@@ -1,23 +1,28 @@
 <template>
   <div class="container">
-      <notice />
+    <notice />
 
+    <div class="about-our-goals-wrap">
+      <div class="about-our-goals"></div>
 
-      <div class="about-our-goals">
-        <p class="text font-white photo-text">Многие не верят предсказаниям и мы решили доказать каждому, что прогноз может изменить жизнь любого человека!</p>
-      </div>
-
+      <p class="text font-white photo-text">
+        Многие не верят предсказаниям и мы решили доказать каждому, <br />
+        <span class="font-yellow"
+          >что прогноз может изменить жизнь любого человека!</span
+        >
+      </p>
+    </div>
   </div>
 </template>
 
 
 <script>
-import Notice from './Notice.vue'
+import Notice from "./Notice.vue";
 
 export default {
-  name: 'About',
+  name: "About",
   components: {
-    Notice
-  }
-}
+    Notice,
+  },
+};
 </script>

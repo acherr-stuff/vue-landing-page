@@ -1,6 +1,6 @@
 #about {
-    height: auto;
-    min-height: 100vh;
+    /* height: auto;
+    min-height: 100vh; */
     margin-top: 25px;
 }
 
@@ -20,8 +20,17 @@ margin-right: auto;
 /* position: relative; */
 width: 83%;
 margin: 50px auto;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
 
 }
+
+.notice-text b {
+
+}
+
+
 
 .notice-wrap  {
   position: relative;
@@ -38,24 +47,43 @@ margin: 50px auto;
 
 }
 
+.about-our-goals-wrap {
+    position: relative;
+    min-height: 606px;
+    margin-top: 70px;
+
+}
+
 .about-our-goals {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url("../../assets/photo.png");
+    background-image: url("../../assets/photo2.png");
     background-origin: padding-box;
     background-repeat: no-repeat;
-    margin-top: 70px;
-    padding-top: 240px;
-    padding-bottom: 240px;
+    background-position-y: 50%;
+    /* padding-top: 240px;
+    padding-bottom: 240px; */
     width: 100%;
-    height: auto;
+    position: absolute;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -10;
+    /* min-height: 331px */
 }
 
 .photo-text {
-  width: 27%;
+  width: 380px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 240px; */
+  padding-top: 240px;
+  font-size: 25px;
+line-height: 35px;
+/* position: absolute; */
+left: 0;
+/* or 140% */
+text-align: center;
+
+color: #FFFFFF;
 }

@@ -22,6 +22,25 @@
   background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
   font-size: 20px;
   line-height: 23px;
+  max-width: 310px;
+  /* padding-bottom: 22px;
+  padding-top: 22px; */
+}
+
+.btn-call {
+margin-top: 35px;
+background: linear-gradient(90deg, rgba(76, 217, 100, 0.9) -6.2%, rgba(50, 185, 73, 0.9) 100%);  font-size: 20px;
+font-size: 20px;
+line-height: 23px;
+max-width: 400px;
+width: 83%;
+height: 30px;
+
+/* display: flex;
+align-items: center;
+text-align: center; */
+
+color: #FFFFFF;
   /* padding-bottom: 22px;
   padding-top: 22px; */
 }
@@ -41,4 +60,42 @@
   right: 0;
   background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);
 }
+
+
+.btn-select {
+  width: 100%;
+  color: black;
+  margin-top: 35px;
+}
+
+
+ select {
+    /* border: .5px solid #fff; */
+/* border-radius: 30px; */
+/* min-height: 51px; */
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+/* width: 166px; */
+text-align: center;
+-moz-text-align-last: center;
+text-align-last: center;
+/* margin-bottom: 13px; */
+/* padding: 0 20px; */
+/* color: #fff; */
+outline: none;
+cursor: pointer;
+/* font: 700 18px/22px Roboto; */
+background: url(../../assets/selectarrow.png) no-repeat 95% 50%,linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);;
+}
+
+
+/* .btn-select {
+margin-top: 35px;
+width: 100%;
+background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
+color: #202024;
+} */
+
+
 

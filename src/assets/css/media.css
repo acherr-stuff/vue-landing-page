@@ -1,0 +1,297 @@
+/*
+@media only screen and (min-width: $tablet-breakpoint) and (max-width: $laptop-breakpoint - 1) {
+  } */
+
+/* @media only screen and (min-width: 1441px) {
+
+  .container {
+    width: 1440px;
+  }
+
+} */
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  /* section {
+    width: 100%;
+  } */
+
+  /* .page {
+    max-width: 1440px;
+  } */
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    max-width: 768px;
+    margin-bottom: 50px !important;
+    /* width: 100%; */
+  }
+  .container {
+    max-width: 768px;
+    width: 100%;
+    min-width: 320px;
+  }
+  .header-main {
+    height: 35px;
+  }
+
+  .header-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .logo-wrap {
+    width: 225px;
+    height: 225px;
+    margin-top: 35px;
+  }
+
+  .logo-img {
+    max-width: 137px;
+    max-height: 137px;
+  }
+
+  .question-text {
+    padding-bottom: 3px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .answer-section {
+    max-width: 180px;
+  }
+
+  .btn-question {
+    margin-top: 20px;
+    background: linear-gradient(
+      90deg,
+      rgba(246, 200, 102, 0.9) -6.2%,
+      rgba(254, 173, 53, 0.9) 100%
+    );
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .btn-select {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .btn-call {
+  }
+
+  #home-page {
+    background-image: url("../../assets/blik.png");
+    /* background-position-x: -60px; */
+  }
+
+  .notice {
+    width: 255px;
+    /* max-width: 450px;
+width: 88%; */
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .notice-text {
+    /* position: relative; */
+    /* width: 83%; */
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .notice-text b {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .notice-image {
+    /* position: absolute; */
+    top: -40px;
+    /* z-index: 1000; */
+    left: 0;
+    margin-left: 40%;
+    width: 78px;
+    height: 78px;
+  }
+
+  .about-our-goals-wrap {
+    min-height: 331px;
+    margin-top: 40px;
+  }
+
+  .photo-text {
+    width: 220px;
+    /* margin-left: auto;
+  margin-right: auto; */
+    padding-top: 100px;
+    font-size: 16px;
+    line-height: 25px;
+    /* position: absolute;
+left: 20%; */
+    /* or 140% */
+    /* text-align: center;
+
+color: #FFFFFF; */
+  }
+
+  .footer-bg {
+    /* position: relative; */
+    padding-bottom: 70px;
+  }
+
+  .eye-bg {
+    right: -30px ;
+    width: 84px ;
+    height: 50px ;
+  }
+
+  .eye-bg-h {
+    height: 57px;
+    right: -20px ;
+  }
+
+  .moon-bg {
+    bottom: 70px ;
+    left: -15px ;
+    width: 50px ;
+    height: 50px ;
+  }
+
+   .moon-bg-q {
+    top: -30px;
+    left: -10px ;
+    width: 50px ;
+    height: 50px ;
+  }
+
+  .runes1 {
+    margin-bottom: 40px ;
+    width: 33px ;
+    height: 10px t;
+  }
+
+  .runes2 {
+    margin-top: 40px ;
+    width: 33px ;
+    height: 10px ;
+  }
+
+  .footer-text {
+    font-size: 20px ;
+    line-height: 28px ;
+  }
+
+  .test-page-header {
+    height: 125px !important;
+    /* margin-bottom: 36px !important; */
+  }
+
+  /* .test-page-header .content {
+
+        height: inherit;
+  } */
+
+  .quote-text {
+  width: 235px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    /* margin-left: auto;
+    margin-right: auto;
+
+opacity: 0.6; */
+  }
+
+  .text-xs {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+
+  .container-result {
+    width: 85%;
+  }
+
+   .result-message-wrapper {
+    padding-top: 24px;
+    padding-bottom: 18px;
+
+  }
+
+  .result-text-message {
+    font-size: 20px;
+    line-height: 25px;
+
+  }
+
+  .result-text-message.curve {
+  font-size: 20px;
+  line-height: 25px;
+
+  }
+
+  .result-text {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+  .result-notice {
+    padding-top: 64px;
+    padding-bottom: 38px;
+
+}
+.footer {
+  margin-top: 65px;
+}
+
+.footer-bottom-text {
+    font-size: 12px;
+  line-height: 18px;
+}
+
+}
+
+
+@media  only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    .result-text-message {
+    font-size: 14px;
+    line-height: 18px;
+    width: 90%
+  }
+
+  .result-text-message.curve {
+font-size: 14px;
+    line-height: 18px;
+    width: 90%
+  }
+
+  .result-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+  .message-bottom {
+    width: 17px;
+    height: 17px;
+  }
+
+}

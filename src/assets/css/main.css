@@ -1,22 +1,12 @@
 @import "fonts.css";
+@import "layout.css";
 @import "button.css";
 @import "about.css";
 @import "home-page.css";
 @import "helper.css";
+@import "result-page.css";
+@import "media.css";
 
-
-a {
-   text-decoration: none;
-}
-
-section {
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 120px;
-    /* max-width: 1440px; */
-    max-width: 2560px;
-    /* padding: 0 16px; */
-}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -24,52 +14,92 @@ section {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #FFFFFF;
-}
-body {
-  background-color: #202024;
+  width: 100%;
 }
 
 
-#test {
-  /* height: auto; */
+.footer-bg {
+    position: relative;
+    padding-bottom: 80px;
 }
 
-  #footer {
-    /* height: 100vh; */
+
+
+  .runes1 {
+    margin-bottom: 80px;
+    width: 57px;
+    height: 18px
+  }
+
+  .runes2 {
+    margin-top: 80px;
+    width: 57px;
+    height: 18px
+  }
+
+  .footer-text {
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
   }
 
 
-
-
-
-
-
-
-  .content-text {
-    margin-top: 10px;
-    /* margin-bottom: 65px; */
+  .test.container-bottom {
+      justify-content: space-around;
+      flex-flow: column;
   }
 
-  .content {
-    max-width: 500px;
+  .test-page {
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     flex-direction: column;
   }
+  .test-page-header {
+      height: 225px;
+      /* margin-bottom: 60px; */
+  }
 
-  p {
-    margin: 0;
+   .test-page-header  .result-message-wrapper {
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+      /* height: 225px; */
+      /* margin-bottom: 60px; */
+  }
+
+  .test-page-header .content {
+
+    height: inherit;
+  }
+
+  .q.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  }
+
+  .quote-text {
+    width: 410px;
+    font-size: 25px;
+    line-height: 35px;
+    margin: auto;
+
+    opacity: 0.6;
+
+
   }
 
 
 
 
-  .container {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+  .container-result {
+    max-width: 480px;
+    min-width: 260px;
   }
+
+
+.warning {
+  border: 1px solid red;
+}
 
 
