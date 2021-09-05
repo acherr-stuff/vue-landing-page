@@ -7,17 +7,19 @@
       v-on:presentQuestion="onPresentQuestion"
       v-on:changeData="onChangeData"
     ></component>
-    <preloader v-show="isLoading"/>
+    <preloader v-if="isLoading"/>
+    <preloader-2 v-if="isLoadingResult"/>
   </div>
 </template>
 
 <script>
-import Preloader from "./components/test/Preloader.vue";
+import Preloader from "./components/Preloader.vue";
+import Preloader2 from "./components/Preloader2.vue";
 import HomePage from "./components/HomePage.vue";
 import TestingPage from "./components/TestingPage.vue";
-import Form2 from "./components/Form2.vue";
+// import Form2 from "./components/Form2.vue";
 import Form3 from "./components/Form3.vue";
-import Form4 from "./components/Form4.vue";
+// import Form4 from "./components/Form4.vue";
 import Form5 from "./components/Form5.vue";
 import Result from "./components/Result.vue";
 
@@ -38,11 +40,12 @@ export default {
   name: "App",
   components: {
     Preloader,
+    Preloader2,
     HomePage,
     TestingPage,
-    Form2,
+    // Form2,
     Form3,
-    Form4,
+    // Form4,
     Form5,
     Result
   },
@@ -143,7 +146,8 @@ export default {
       currentComponentProperties: { ...{ index: 0 }, ...questions[0].input },
       // Список вопросов
       questions: questions,
-      isLoading: false
+      isLoading: false,
+      isLoadingResult: false
     };
   },
   methods: {
@@ -194,27 +198,13 @@ export default {
         case 5:
         case 6:
         case 7:
-          this.isLoading = true;
+          this.isLoadingResult = true;
           setTimeout(function () {
-            this.isLoading = false;
+            this.isLoadingResult = false;
             this.currentComponentProperties = {};
             this.currentComponent = "Result";
-          }.bind(this), 2000);
+          }.bind(this), 10000);
           break;
-        //  case 6:
-        //   this.isLoading = true;
-        //   setTimeout(function () {
-        //     this.isLoading = false;
-        //     this.currentComponent = "Result";
-        //   }.bind(this), 2000);
-        //   break;
-        //   case 7:
-        //   this.isLoading = true;
-        //   setTimeout(function () {
-        //     this.isLoading = false;
-        //     this.currentComponent = "Result";
-        //   }.bind(this), 2000);
-        //   break;
 
         default:
           break;

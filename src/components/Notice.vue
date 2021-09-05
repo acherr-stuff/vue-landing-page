@@ -1,8 +1,8 @@
 <template>
-  <div class="notice-content content">
-    <div class="notice-wrap wpar">
+  <div class="content">
+    <div class="notice-wrap">
       <img src="../assets/hands.png" class="notice-image" />
-      <div class="notice-card notice">
+      <div class=" notice">
         <p class="font-white notice-text">
           Позвольте нам раскрыть эту волнующую тайну и
           <b class="font-yellow"

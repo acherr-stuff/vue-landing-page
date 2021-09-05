@@ -16,8 +16,8 @@
             <div class="logo-bg"></div>
           </div>
 
-          <div class="content-question m-x question-wrap wrap">
-            <div class="question-text font-yellow text">
+          <div class=" m-x question-wrap ">
+            <div class="question-text m-x font-yellow">
               Вас беспокоит вопрос о том, <br />
               <span class="text-upp">
                 когда Вы покинете этот Мир и при каких обстоятельствах?
@@ -37,7 +37,7 @@
                 Нет
               </a>
             </div>
-            <div class="question-footer footer font-gray text text-xs">
+            <div class="question-footer font-gray text-xs">
               Онлайн предсказание
             </div>
           </div>
@@ -49,7 +49,7 @@
     </section>
 
     <section class="container">
-      <div id="test" class="content-question question-wrap m-x wrap">
+      <div id="test" class="question-wrap m-x">
         <div class="question-text font-yellow text-upp">
           {{ question }}
         </div>
@@ -66,13 +66,13 @@
           </a>
         </div>
 
-        <div class="question-footer footer font-gray text text-xs p-rel">
+        <div class="question-footer font-gray text-xs p-rel">
           Вопрос {{ number }}-5
         </div>
       </div>
     </section>
 
-    <footer id="footer" class="section footer">
+    <footer id="footer" class="footer-home">
       <footer-l />
     </footer>
   </div>

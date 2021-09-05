@@ -3,103 +3,21 @@
 @import "button.css";
 @import "about.css";
 @import "home-page.css";
+@import "test-page.css";
 @import "helper.css";
 @import "result-page.css";
-@import "media.css";
-
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #FFFFFF;
-  width: 100%;
-}
-
-
-.footer-bg {
-    position: relative;
-    padding-bottom: 80px;
+  color: #ffffff;
 }
 
 
 
-  .runes1 {
-    margin-bottom: 80px;
-    width: 57px;
-    height: 18px
-  }
-
-  .runes2 {
-    margin-top: 80px;
-    width: 57px;
-    height: 18px
-  }
-
-  .footer-text {
-  font-size: 25px;
-  line-height: 35px;
-  text-align: center;
-  }
 
 
-  .test.container-bottom {
-      justify-content: space-around;
-      flex-flow: column;
-  }
-
-  .test-page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .test-page-header {
-      height: 225px;
-      /* margin-bottom: 60px; */
-  }
-
-   .test-page-header  .result-message-wrapper {
-     width: 80%;
-     margin-left: auto;
-     margin-right: auto;
-      /* height: 225px; */
-      /* margin-bottom: 60px; */
-  }
-
-  .test-page-header .content {
-
-    height: inherit;
-  }
-
-  .q.content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  }
-
-  .quote-text {
-    width: 410px;
-    font-size: 25px;
-    line-height: 35px;
-    margin: auto;
-
-    opacity: 0.6;
-
-
-  }
-
-
-
-
-  .container-result {
-    max-width: 480px;
-    min-width: 260px;
-  }
-
-
-.warning {
-  border: 1px solid red;
-}
 
 

@@ -13,10 +13,9 @@
         </div>
       </header>
     </div>
-    <div class="container container-test test container-bottom">
-      <!-- <div class="q content"> -->
-        <div class="content-question question-wrap m-x wrap">
-          <div class="question-text font-yellow text-upp">
+    <div class="container container-test container-bottom p-rel">
+
+          <div class="question-text m-x font-yellow text-upp">
             {{ question }}
           </div>
           <div class="answer-section">
@@ -31,12 +30,14 @@
               {{ option }}
             </a>
           </div>
-        </div>
-       <!-- </div> -->
-        <div class="question-footer container-test font-gray m-x text-xs p-rel">
+        <!-- </div> -->
+          <div class="question-footer-test font-gray text-xs ">
+          <div class="content p-rel">
           <img class="moon-bg-q op-02 fl" src="../assets/moon.svg" alt="">
 
           Вопрос {{ number }}-5
+          </div>
+
         </div>
 
     </div>
@@ -45,17 +46,9 @@
 
 
 <script>
-import QuestionForm from "./test/QuestionForm";
-// import SelectForm from './test/SelectForm'
-import Preloader from "./test/Preloader";
 
 export default {
   name: "TestingPage",
-  components: {
-    QuestionForm,
-    // SelectForm,
-    Preloader,
-  },
   props: {
     index: Number,
     number: Number,
@@ -65,16 +58,6 @@ export default {
   },
   data: function () {
     return {
-      isPreloaderVisible: false,
-      //     questions: [
-      //   {
-      //     id: '1',
-      //     text: '',
-      //   },
-      //   {
-
-      //   }
-      // ]
     };
   },
   methods: {

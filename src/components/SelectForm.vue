@@ -1,14 +1,12 @@
 <template>
-     <div class="content-question question-wrap mb-40 wrap">
-          <!-- <div class="question font-yellow text-upp">
-              Укажите свою дату рождения:
-          </div> -->
+     <div id="select-form">
+
           <form class="select-section answer-section" v-on:submit.prevent="checkForm" >
 
             <div class="form-group">
 
 
-             <select v-model="selectedDay" class="btn btn-round btn-select" v-bind:class="{ warning: hasDayWarning }" @select="isDaySelected()">
+             <select v-model="selectedDay" class="btn btn-round btn-select" v-bind:class="{ warning: hasDayWarning }" >
               <option :value="null" disabled selected hidden>День</option>
               <option v-for="option in dayOptions" v-bind:key="option.value" :value="option.value" >{{option.text}}</option>
             </select>
@@ -30,11 +28,9 @@
             </div>
 
 
-           <!-- <input  class="btn btn-round btn-question"  v-on:click.prevent="onFormSubmit" type="submit" value="Далее"> -->
             <input  class="btn btn-round btn-question" type="submit" value="Далее">
           </form>
 
-          <!-- <button class="btn btn-round btn-question"> Далее </button> -->
         </div>
 </template>
 
@@ -57,7 +53,6 @@ export default {
 
         selectedMonth: null,
           monthOptions: [
-          { text: 'Месяц', value: '' },
           { text: '01', value: 1 },
           { text: '02', value: 2 },
           { text: '03', value: 3 }
@@ -67,7 +62,6 @@ export default {
 
          selectedYear: null,
           yearOptions: [
-          { text: 'Год', value: '' },
           { text: '1975', value: 1975 },
           { text: '1982', value: 1982 },
           { text: '1998', value: 1998 },
@@ -81,57 +75,14 @@ export default {
         }
   },
 
-  // computed: {
-
-  //   hasDayWarning() {
-  //   if(this.selectedDay == null) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // },
-  // hasMonthWarning() {
-  //   if(this.selectedMonth == null) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // },
-
-  // hasYearWarning() {
-  //   if(this.selectedYear == null) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // },
-
-  //   // hasDayWarning: false,
-  //   // hasMonthWarning: false,
-  //   // hasYearWarning: false,
-
-  // },
   methods: {
 
       checkForm: function (event) {
 
         console.log("проверка формы")
-        // this.attemptSubmit = true;
-      // if (this.selectedDay == null || this.selectedMonth == null || this.selectedYear == null)
-
-      //  {
-      //   // event.preventDefault();
-      //   console.log(this.hasDayWarning)
-      //  }
-
-
-
-
-
 
        if (this.selectedDay == null) {
         this.hasDayWarning = true;
-        console.log("День не выбран")
         console.log(this.hasDayWarning)
         event.preventDefault();
        } else {
@@ -141,7 +92,6 @@ export default {
 
        if (this.selectedMonth == null) {
         this.hasMonthWarning = true;
-        console.log("День не выбран")
         console.log(this.hasMonthWarning)
         event.preventDefault();
        } else {
@@ -151,7 +101,6 @@ export default {
 
        if (this.selectedYear == null) {
         this.hasYearWarning = true;
-        console.log("День не выбран")
         console.log(this.hasYearWarning)
         event.preventDefault();
        } else {

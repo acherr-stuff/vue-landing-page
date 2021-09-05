@@ -14,15 +14,15 @@
       <img class="message-bottom" src="../assets/message-bottom.svg" alt="" />
     </header>
 
-    <div class="container container-result container-bottom">
-      <div class="content">
+    <div class="container container-result container-bottom p-rel">
+      <!-- <div class="content p-rel"> -->
         <div class="result-text font-simple-thin">
           Вы можете узнать, как повлиять на события, которые ожидают вас в
           ближайшем будущем.
         </div>
 
-        <div class="notice result-notice">
-          <p class="result-text font-yellow">
+        <div class="result-notice">
+          <p class="result-text font-yellow m-x">
             <b class="text-upp">
               Первое значимое событие может произойти уже 14.02.2021</b
             >, вам надо быть готовым, что бы последствия не оказались
@@ -43,16 +43,8 @@
           <div class="btn-left-part"></div>
           Позвонить и прослушать</a
         >
-      </div>
 
-      <footer class="footer">
-        <p class="footer-bottom-text footer-font">
-          TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
-          FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI,
-        </p>
-      </footer>
-
-      <div v-if="isLoadedAll" id="people-info" class="font-simple-thin">
+        <div v-if="isLoadedAll" id="people-info" class="font-simple-thin">
         <div class="container container-result">
           <h3>Ваши данные:</h3>
           <div class="content people-table">
@@ -151,6 +143,19 @@
           </div>
         </div>
       </div>
+
+
+        <footer class="footer-result">
+        <p class="footer-bottom-text footer-font">
+          TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE
+           DIVERTISMENT. PRIN
+          FOLOSIREA LUI DECLARATI CA AVETI  18 ANI IMPLINITI,
+
+
+        </p>
+
+      </footer>
+
     </div>
   </div>
 </template>
@@ -163,51 +168,29 @@ export default {
       data: {},
       fetchData: {},
       mainGetQuery: "https://swapi.dev/api/people/1/",
-      errorMessage: "",
       isLoadedAll: false,
     };
   },
-  computed: {
-    // getFieldsNames: function () {
-    //   return Object.keys(this.fetchData);
-    // },
-    // parcedData: function () {
-    //   return this.parseData(this.fetchData)
-    // }
-  },
+
   methods: {
     async getMainData(query) {
       this.isLoadedAll = false;
       console.log("загрузка основных данных");
-      const res = await fetch(query, {
-        method: "GET",
-      });
-      const data = await res.json();
-      this.fetchData = data;
-      // this.data = await JSON.parse(data)
-      console.log("fetchdata", this.fetchData);
-
+      this.fetchData = await this.getData(query);
       this.data = this.parseData(this.fetchData);
-      // console.log('parceddata',this.parcedData);
-      // this.isLoadedAll = true;
-
       console.log("data ", this.data);
       this.isLoadedAll = true;
-      console.log("данные загружены");
     },
 
     async getData(query) {
-      console.log("загрузка данных");
-      console.log("query", query);
+
       const res = await fetch(query, {
         method: "GET",
       });
       const data = await res.json();
-      // this.data = await JSON.parse(data)
-      // console.log('data',data);
+
       return data;
-      // console.log(this.parcedData);
-      // this.parseData(this.fetchData)
+
     },
 
     parseData(dataJSON) {
@@ -215,40 +198,29 @@ export default {
       for (let key in dataJSON) {
         if (key !== "url") {
           let value = dataJSON[key];
-          // console.log(key,this.isValidHttpUrl(value))
-          // data[key] = value
           if (this.isValidHttpUrl(value) && !Array.isArray(value)) {
-            // console.log('getdataval',this.getData(value))
             this.getData(value).then(function (res) {
               data[key] = res;
-              // console.log('getdatakey', key)
-              // console.log('getdataval', data[key])
             });
           } else {
             data[key] = value;
           }
 
           if (Array.isArray(value)) {
-            // console.log(key, "- массив объектов");
             data[key] = [];
             for (let i = 0; i < value.length; i++) {
               if (this.isValidHttpUrl(value[i])) {
                 this.getData(value[i]).then(function (res) {
-                  // data[key][i] = res;
                   data[key].push(res);
-                  //  console.log('getdatakey', key);
-                  // console.log("элемент массива ", key, " -  ", data[key][i]);
                 });
               }
             }
           } else {
             data[key] = value;
           }
-          // console.log(key,'-data', data)
         }
       }
-      // console.log('data', data)
-      // this.isLoadedAll = true
+
       return data;
     },
     isValidHttpUrl(string) {

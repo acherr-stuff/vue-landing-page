@@ -1,16 +1,16 @@
 .btn {
-  font-family: 'RobotoRegular';
- position: relative;
- display: inline-flex;
- align-items: center;
- justify-content: center;
- /* box-shadow: none; */
- color: #fff;
- /* transition: all 0.2s ease-in-out; */
+  font-family: "RobotoRegular";
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* transition: all 0.2s ease-in-out; */
   font-size: 20px;
   line-height: 23px;
   padding-bottom: 23px;
-  padding-top: 24px;
+  padding-top: 23px;
+  border: none;
 }
 
 .btn-round {
@@ -19,30 +19,26 @@
 
 .btn-question {
   margin-top: 35px;
-  background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
-  font-size: 20px;
-  line-height: 23px;
-  max-width: 310px;
-  /* padding-bottom: 22px;
-  padding-top: 22px; */
+  background: linear-gradient(
+    90deg,
+    rgba(246, 200, 102, 0.9) -6.2%,
+    rgba(254, 173, 53, 0.9) 100%
+  );
 }
 
 .btn-call {
-margin-top: 35px;
-background: linear-gradient(90deg, rgba(76, 217, 100, 0.9) -6.2%, rgba(50, 185, 73, 0.9) 100%);  font-size: 20px;
-font-size: 20px;
-line-height: 23px;
-max-width: 400px;
-width: 83%;
-height: 30px;
+  margin-top: 35px;
+  background: linear-gradient(
+    90deg,
+    rgba(76, 217, 100, 0.9) -6.2%,
+    rgba(50, 185, 73, 0.9) 100%
+  );
 
-/* display: flex;
-align-items: center;
-text-align: center; */
-
-color: #FFFFFF;
-  /* padding-bottom: 22px;
-  padding-top: 22px; */
+  max-width: 400px;
+  width: 83%;
+  /* height: 30px; */
+  padding-bottom: 28px;
+  padding-top: 28px;
 }
 
 .btn-left-part {
@@ -50,7 +46,12 @@ color: #FFFFFF;
   position: absolute;
   height: 100%;
   left: 0;
-  background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);
+  background: linear-gradient(
+    248.67deg,
+    rgba(255, 255, 255, 0) 30.84%,
+    rgba(255, 255, 255, 0.29) 46.06%,
+    rgba(255, 255, 255, 0) 64.04%
+  );
 }
 
 .btn-right-part {
@@ -58,9 +59,13 @@ color: #FFFFFF;
   position: absolute;
   height: 100%;
   right: 0;
-  background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);
+  background: linear-gradient(
+    248.67deg,
+    rgba(255, 255, 255, 0) 30.84%,
+    rgba(255, 255, 255, 0.29) 46.06%,
+    rgba(255, 255, 255, 0) 64.04%
+  );
 }
-
 
 .btn-select {
   width: 100%;
@@ -68,34 +73,66 @@ color: #FFFFFF;
   margin-top: 35px;
 }
 
-
- select {
-    /* border: .5px solid #fff; */
-/* border-radius: 30px; */
-/* min-height: 51px; */
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-/* width: 166px; */
-text-align: center;
--moz-text-align-last: center;
-text-align-last: center;
-/* margin-bottom: 13px; */
-/* padding: 0 20px; */
-/* color: #fff; */
-outline: none;
-cursor: pointer;
-/* font: 700 18px/22px Roboto; */
-background: url(../../assets/selectarrow.png) no-repeat 95% 50%,linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);;
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  outline: none;
+  cursor: pointer;
+  background: url(../../assets/selectarrow.png) no-repeat 95% 50%,
+    linear-gradient(
+      90deg,
+      rgba(228, 228, 228, 0.9) -6.2%,
+      rgba(203, 203, 203, 0.9) 100%
+    );
 }
 
+.warning {
+  border: 1px solid red;
+}
 
-/* .btn-select {
-margin-top: 35px;
-width: 100%;
-background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
-color: #202024;
-} */
+@media only screen and (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 
+  .btn-question {
+    margin-top: 20px;
+  }
 
+  .btn-select {
+    margin-top: 20px;
+  }
 
+  .btn-call {
+    margin-top: 20px;
+    padding-bottom: 28px;
+    padding-top: 28px;
+  }
+
+  .text-xs {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .btn {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .btn-call {
+    width: 91%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}

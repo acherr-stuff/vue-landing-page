@@ -85,6 +85,11 @@ font-size: 16px;
 line-height: 19px;
 }
 
+.text-upp {
+    text-transform: uppercase;
+    /* line-height: 35px; */
+  }
+
 .footer-font {
   font-family: "RobotoRegular", sans-serif;
 
